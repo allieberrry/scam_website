@@ -1,6 +1,7 @@
 
 /* BODY */
-body{background-color: #d3d6db;}
+body{background-color: #d3d6db;
+    font-family: Manrope;}
 
 /* JUMBOTRON ELEMENT */
 .website_title{font-weight: bolder;}
@@ -18,7 +19,8 @@ body{background-color: #d3d6db;}
             border: none;}     /* input box */
 
 /* PT CARDS */
-.card{background-color: #303841;}  /* complete card */
+.card{background-color: #303841;}   /* complete card */
+
 .boxx{border: none;    /* definition and example box */
     padding: 8px;
     background-color: #3a4750;
