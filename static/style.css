@@ -2,51 +2,56 @@
 body{background-color: #F5F5F5;
     font-family: Manrope;}
 
+.main-wrapper {
+  max-width: 1080px; /* or try 800px */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
 
 /* JUMBOTRON ELEMENT */
-.website_title{font-weight: bolder;}
+.website_title{font-weight: bold;}                /* "Scam Detector" title website */
+.custom-jumbotron{border: solid 4px #E0E0E0;        /* jumbotron box */
+                    margin-top: 40px}
 
-.custom-jumbotron{border: solid 3px #E0E0E0}
 /* FORM ELEMENT */
-.form-label{font-size: 16px;                /* "enter scam message" THIS ISNT WORKING!!!*/
-            font-weight: bold;}
-.submit{margin-top: 1px;                   /* submit button */
+.form-label{font-size: large;                    /* "enter scam message" text */
+            font-weight: bold;
+            margin-bottom: 4px;}
+.scam_text{border: solid 4px #E0E0E0}       /* scam input box */
+.form-text{margin: 8px}
+.submit{                    /* submit button */
         border-radius: 8px;
         border: none;
-        font-size: 15px;
-        width: 5%;}      
-.scam_input{background-color: #F8F9FA;
-            border-radius: 8px;
-            border: none;}     /* input box */
+        font-size: 18px;
+}      
+
 
 /* PT CARDS */
- /* complete card */
-.boxx{border: none;    /* definition and example box */
+
+/* outside card */
+.card {                                 
+    background-color: #FFE5E5;
+    flex: 1 0 calc(33.333% - 10px); /* 3 per row */
+    box-sizing: border-box;
+    border: 4px solid #E57373;
+    padding: 10px;
+    text-align: left;
+}
+
+/* inside card */
+.boxx{
     padding: 8px;
-    background-color: #fef0ee;
+    background-color: #ffffff;
+    border: 2px solid #e3c5c5;
     border-radius: 8px;
-    border: solid 3px #E0E0E0 
-}
-    
-.card-body {color: #FFFFFF;
-}          /* card text */
-.pt_label{font-weight: bold;}
+}           
 
-.card-text{color:black}
-
-
-.card {
-    background-color: #FFE4E1;
-  flex: 1 0 calc(33.333% - 10px); /* 3 per row */
-  box-sizing: border-box;
-  border: 3px solid #AE4B48;
-  padding: 10px;
-  text-align: left;
-}
-
-.PT-title{font-weight:700}
-
-.form-label{font-size:large}
-
-#scam_text{border: solid 3px #E0E0E0}
+/* card text */       
+.card h5.PT-title {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  font-family: 'Manrope', sans-serif !important;
+  margin-bottom: 0.5rem;
+}        
+.card-text{color:black}           /* all card text */           
