@@ -1,28 +1,3 @@
-/* BODY */
-body{background-color: #F5F5F5;
-    font-family: Manrope;}
-
-
-
-/* JUMBOTRON ELEMENT */
-.website_title{font-weight: bolder;}
-
-.custom-jumbotron{border: solid 3px #E0E0E0}
-/* FORM ELEMENT */
-.form-label{font-size: 16px;                /* "enter scam message" THIS ISNT WORKING!!!*/
-            font-weight: bold;}
-.submit{margin-top: 1px;                   /* submit button */
-        border-radius: 8px;
-        border: none;
-        font-size: 15px;
-        width: 5%;}      
-.scam_input{background-color: #F8F9FA;
-            border-radius: 8px;
-            border: none;}     /* input box */
-
-/* PT CARDS */
- /* complete card */
-.boxx{border: none;    /* definition and example box */
 
 /* BODY */
 body{background-color: #d3d6db;
@@ -73,7 +48,7 @@ body{background-color: #d3d6db;
 
 .form-label{font-size:large}
 
-#scam_text{border: solid 3px #E0E0E0}
+#scam_text{border: solid 3px #E0E0E0
     background-color: #3a4750;
     border-radius: 8px}
 .card-body{color: #d3d6db;}          /* card text */
