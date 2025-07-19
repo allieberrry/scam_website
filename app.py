@@ -27,13 +27,13 @@ def index():
     }
 
     PT_DEFINITIONS = {
-    'a': 'People tend to obey authorities. People trust credible individuals.',
+    'a': 'Posing as someone official to gain trust.',
     'c': 'Tendency to behave in a way consistent with past decisions and behaviors.',
     'f': 'Creating fear of negative consequences (e.g., arrest, data leak).',
     'l': 'Preference for saying "yes" to requests of people they know and like. People are programmed to like others who like them back and who are similar to them.',
-    'p': 'Visceral triggers of desire that override rationality.',
+    'p': 'Visceral triggers of desire that override rationality. Promising big money or rewards to get your interest.',
     'r': 'Tendency to feel obliged to repay favors from others. "I do something for you, you do something for me."',
-    's': 'Tendency to reference the behavior of others, using the majority behavior to guide their own actions.',
+    's': 'Tendency to reference the behavior of others, using the majority behavior to guide their own actions. Claiming “everyone’s doing it” to make it seem safe.',
     't': 'Scammer makes up story to add source credibility and gain victim\'s trust. The scam message often includes partial personal details to seem plausible.',
     'u': 'Sense of urgency and scarcity assign more value to items.',
     }
