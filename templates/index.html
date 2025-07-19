@@ -26,10 +26,11 @@
 
 <div class="container my-4 jumbo">
    <div class="p-5 text-center custom-jumbotron rounded-3" style="background-color: #FFFFFF;">
-      <i class="bi bi-search" style="font-size: 4rem; color: var(--bs-black);"></i>
-      <h1 class="text-body-emphasis website_title"> Scam Detector </h1>
-      <p class="col-lg-8 mx-auto fs-5 text-muted">
-            Welcome to our Scam PT Detector website!
+      <i class="bi bi-search" style="font-size: 4rem; color: var(--bs-blue);"></i>
+      <h1 class="text-body-emphasis website_title"> Scam PT Detector </h1>
+      <p class="col-lg-8 mx-auto fs-5 description">
+        Scammers use <b class="bold-words">psychological techniques (PTs)</b> to manipulate victims. Our <b class="bold-words">tool</b> helps you spot these tricks by <b class="bold-words">analyzing</b> the message you received.
+
       </p>
    </div>
 </div>
@@ -42,7 +43,18 @@
 
 <form method="POST">
   <div class="container mb-3">
-    <label for="exampleInputEmail1" class="form-label">Enter scam message:</label>
+    <label for="exampleInputEmail1" class="form-label">Enter scam message or select a common scam below:</label>
+    <br>
+      <div class = "custom-buttons">
+          <!--Buttons for Common Scam Messages-->
+          <button type="button" class="btn btn-outline-dark toll">Toll Scam</button>
+          <button type="button" class="btn btn-outline-dark address">Address Scam</button>
+          <button type="button" class="btn btn-outline-dark order">Order Scam</button>
+          <button type="button" class="btn btn-outline-dark loan">Loan Scam</button>
+          <button type="button" class="btn btn-outline-dark job">Job Scam</button>
+          
+
+      </div>  
     <textarea class="form-control scam_text" id="scam_text" name="scam_text" rows="10" style="width: 100%;">{{ scam_text }}</textarea>
     <div id="emailHelp" class="form-text"></div>
     <button type="submit" class="btn btn-primary btn-lg submit" value = "Submit">Check for PTs</button>
@@ -58,6 +70,7 @@
           <div class="card-body">
             <h5 class="PT-title"> {{ PT_FULL_NAMES[PT] }} </h5>
             <h6 class="card-text"> <b> Confidence: </b>{{ predict_prob_dict[PT] }} % </h6>
+            <hr class="line-break">
             <div class="boxx">
               <p class="card-text"> <b> Definition: </b> {{ PT_DEFINITIONS[PT] }}</p>
               <p class="card-text"> <b> Example: </b> "{{ PT_EXAMPLES[PT] }}"</p>
@@ -71,6 +84,10 @@
 
 
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <!-- Tags for the Boostrap JavaScript, jQuery, and our JavaScript file-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../static/index.js"></script>
 </body>
 </html>
