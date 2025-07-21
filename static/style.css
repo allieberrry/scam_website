@@ -26,6 +26,15 @@ body{background-color: #F5F5F5;
         font-size: 18px;
 }      
 
+.bold-words{          /*emphasized words in the website description */
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.description{      /*description of the website */
+  color:black
+}
+
 
 /* PT CARDS */
 
@@ -62,20 +71,12 @@ body{background-color: #F5F5F5;
 }        
 .card-text{color:black}           /* all card text */           
 
-.custom-buttons{
+.custom-buttons{              /* buttons for the common scam types */
   margin-top:5px;
   margin-bottom:5px;
 }
 
-.line-break{color:black;
+.line-break{color:black;      /* horizontal break in the cards */
 
 opacity:100;}
 
-.bold-words{
-  color: #0d6efd;
-  font-weight: 600;
-}
-
-.description{
-  color:black
-}
